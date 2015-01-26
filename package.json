@@ -1,0 +1,42 @@
+{
+  "name": "prefixes",
+  "version": "1.0.0",
+  "description": "Return vendor prefixed functions/methods of a given DOM/JavaScript API if normal standard method is not found.",
+  "main": "index.js",
+  "scripts": {
+    "100%": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test": "mocha test.js",
+    "watch": "mocha --watch test.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unshiftio/prefixes"
+  },
+  "keywords": [
+    "prefix",
+    "vendor",
+    "prefixes",
+    "prefixer",
+    "js",
+    "dom",
+    "javascript",
+    "api",
+    "methods",
+    "functions"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unshiftio/prefixes/issues"
+  },
+  "devDependencies": {
+    "assume": "1.1.x",
+    "istanbul": "0.3.x",
+    "mocha": "2.1.x",
+    "pre-commit": "0.0.x"
+  },
+  "homepage": "https://github.com/unshiftio/prefixes",
+  "pre-commit": ["coverage", "100%"]
+}
