@@ -41,7 +41,7 @@ prefixed API's. The function accepts 2 arguments:
   searching `WebSocket` constructors this should just be `WebSocket` with the
   proper casing.
 - **where** `Object`, The object we need to search in. This can be a JavaScript
-  object but also a global, `window` or `document`.
+  object but also a global, `window` or `document`. Defaults to `global`.
 
 ```js
 var found = prefixes('WebSocket'); // Finds mozWebSocket or WebSocket
