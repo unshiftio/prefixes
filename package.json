@@ -1,6 +1,6 @@
 {
   "name": "prefixes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return vendor prefixed functions/methods of a given DOM/JavaScript API if normal standard method is not found.",
   "main": "index.js",
   "scripts": {
