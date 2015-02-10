@@ -10,7 +10,8 @@
  * @api public
  */
 function prefixes(what, where) {
-  where = where || window;
+  where = where || global;
+
   if (what in where) return where[what];
   else for (var i = 0, key; i < prefixes.vendor.length; i++) {
     key = prefixes.vendor[i] + what.charAt(0).toUpperCase() + what.slice(1);

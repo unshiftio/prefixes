@@ -26,6 +26,13 @@ describe('prefixes', function () {
     assume(found).equals(global.mozWebSocket);
   });
 
+  it('defaults to global', function () {
+    var found = prefixes('WebSocket');
+
+    assume(found).is.a('function');
+    assume(found).equals(global.mozWebSocket);
+  });
+
   it('automatically UpperCases the first char', function () {
     var found = prefixes('requestAnimationFrame', global);
 
